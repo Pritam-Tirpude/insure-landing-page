@@ -1,0 +1,42 @@
+$header1: 5rem;
+$header2: 3.5rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$header5: 1.5rem;
+$header6: 1rem;
+
+$primary_dark_violet: hsl(256, 26%, 20%);
+$primary_grayish_blue: hsl(216, 30%, 68%);
+
+$neutral_vary_dark_violet: hsl(270, 9%, 17%);
+$neutral_dark_grayish_violet: hsl(273, 4%, 51%);
+$neutral_very_light_gray: hsl(0, 0%, 98%);
+$neutral_white: hsl(0, 0%, 100%);
+
+$font_DM_serif_display: "DM Serif Display", serif;
+$font_karla: "Karla", sans-serif;
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  font-family: $font_DM_serif_display;
+}

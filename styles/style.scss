@@ -1,0 +1,256 @@
+@import "global";
+@import "container";
+
+.attribution {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.attribution a {
+  color: $neutral_vary_dark_violet;
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .main-container {
+    .intro-container {
+      .intro-img {
+        height: 50vh;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header-container {
+    .nav-bar-container {
+      nav {
+        width: 100%;
+        .logo {
+          padding: 0rem;
+        }
+
+        .nav-mobile {
+          content: url("../images/icon-hamburger.svg");
+          text-align: right;
+          cursor: pointer;
+        }
+
+        .nav-close {
+          content: url("../images/icon-close.svg");
+        }
+
+        .nav-links {
+          display: none;
+        }
+
+        .nav-links {
+          top: 60%;
+          left: 50%;
+          position: fixed;
+          height: 100%;
+          width: 0%;
+          background: url("../images/bg-pattern-mobile-nav.svg") no-repeat
+            bottom $neutral_vary_dark_violet;
+          background-size: contain;
+          transform: translate(-50%, -50%);
+
+          ul {
+            @include flex(center, center, column);
+          }
+
+          ul li {
+            margin-top: 3rem;
+          }
+          a {
+            margin-top: 3rem;
+            color: $neutral_white;
+
+            &:hover {
+              color: $neutral_dark_grayish_violet;
+            }
+          }
+
+          .plan-btn {
+            margin-top: 3rem;
+            .plan-button {
+              margin: 0rem;
+              width: 300px;
+              border: 1px solid $neutral_white;
+              color: $neutral_white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .main-container {
+    padding: 0rem;
+    .intro-container {
+      .bg-left {
+        content: url("../images/bg-pattern-intro-left-mobile.svg");
+        width: 30vw;
+        height: 50vh;
+        top: 50%;
+        left: 0;
+      }
+
+      .bg-right {
+        content: url("../images/bg-pattern-intro-right-mobile.svg");
+        width: 30vw;
+        height: 50vh;
+        top: 90%;
+      }
+
+      .intro-text {
+        align-self: flex-end;
+        margin-top: 50rem;
+        margin-bottom: 5rem;
+        text-align: center;
+        padding: 0rem;
+        hr {
+          display: none;
+        }
+        br {
+          display: none;
+        }
+        h1 {
+          font-size: $header2;
+          line-height: 4rem;
+        }
+      }
+      .intro-img {
+        top: 0;
+        left: 0;
+        right: 0;
+        content: url("../images/image-intro-mobile.jpg");
+        width: 100%;
+      }
+    }
+
+    .header-text {
+      text-align: center;
+      br {
+        display: none;
+      }
+
+      hr {
+        width: 30%;
+        margin-left: 35%;
+        align-self: center;
+      }
+
+      h1 {
+        font-size: $header2;
+      }
+    }
+
+    .insure-benefits {
+      text-align: center;
+      display: block;
+      br {
+        display: none;
+      }
+
+      .affordable-process {
+        margin: 0rem;
+        margin-top: 3rem;
+      }
+
+      .people-first {
+        margin: 0rem;
+        margin-top: 3rem;
+      }
+    }
+
+    .findout-container {
+      padding: 0rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
+      text-align: center;
+      background: url("../images/bg-pattern-how-we-work-mobile.svg") no-repeat
+        top right $primary_dark_violet;
+
+      .findout-content {
+        display: block;
+
+        .findout-text {
+          br {
+            display: none;
+          }
+          h1 {
+            font-size: $header3;
+            line-height: 3rem;
+          }
+        }
+
+        .findout-btn {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+
+  .footer-container {
+    padding: 5rem;
+    background: url("../images/bg-pattern-footer-mobile.svg") no-repeat top left
+      center/cover $neutral_very_light_gray;
+
+    .footer-social {
+      display: block;
+
+      .footer-logo {
+        text-align: center;
+      }
+
+      .social-icons {
+        margin-top: 3rem;
+      }
+    }
+
+    .footer-links {
+      display: block;
+      text-align: center;
+
+      .company {
+        .company-links {
+          a {
+            align-self: center;
+          }
+        }
+      }
+
+      .help {
+        margin-top: 3rem;
+        .help-links {
+          a {
+            align-self: center;
+          }
+        }
+      }
+
+      .contact {
+        margin-top: 3rem;
+        .contact-links {
+          a {
+            align-self: center;
+          }
+        }
+      }
+
+      .others {
+        margin-top: 3rem;
+        .others-links {
+          a {
+            align-self: center;
+          }
+        }
+      }
+    }
+  }
+}

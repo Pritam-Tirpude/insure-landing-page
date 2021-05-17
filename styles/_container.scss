@@ -1,0 +1,417 @@
+.header-container {
+  .nav-bar-container {
+    nav {
+      width: 90%;
+      padding: 1rem;
+      @include flex(center, center, row);
+
+      .logo {
+        flex: 1;
+        padding: 0rem 14rem;
+      }
+
+      .nav-links {
+        ul {
+          @include flex(space-between, center, row);
+          list-style: none;
+        }
+        a {
+          margin: 1rem;
+          text-decoration: none;
+          font-family: $font_karla;
+          color: $neutral_dark_grayish_violet;
+          text-transform: uppercase;
+
+          &:hover {
+            color: $primary_dark_violet;
+          }
+        }
+
+        .plan-btn {
+          .plan-button {
+            margin-left: 1rem;
+            border: 1px solid $neutral_vary_dark_violet;
+            font-family: $font_karla;
+            text-transform: uppercase;
+            background: none;
+            padding: 1rem 2rem;
+            cursor: pointer;
+
+            &:hover {
+              background: $neutral_vary_dark_violet;
+              color: $neutral_white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-container {
+  .intro-container {
+    padding: 5rem 1rem;
+    background-color: $primary_dark_violet;
+    position: relative;
+    min-height: 80vh;
+    @include flex(flex-start, center, row);
+
+    .bg-left {
+      position: absolute;
+      top: 60%;
+      left: 0;
+    }
+    .bg-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      img {
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+      }
+    }
+    .intro-text {
+      padding: 0rem 14rem;
+
+      hr {
+        width: 20%;
+        color: $neutral_white;
+      }
+
+      h1 {
+        margin-top: 2rem;
+        font-size: $header1;
+        color: $neutral_white;
+        line-height: 5rem;
+      }
+      p {
+        color: $neutral_white;
+        font-family: $font_karla;
+        margin-top: 2rem;
+      }
+
+      .intro-btn {
+        margin-top: 2rem;
+        .intro-button {
+          border: 1px solid $neutral_white;
+          font-family: $font_karla;
+          text-transform: uppercase;
+          background: none;
+          padding: 1rem 3rem;
+          cursor: pointer;
+          color: $neutral_white;
+
+          &:hover {
+            background: $neutral_white;
+            color: $primary_dark_violet;
+          }
+        }
+      }
+    }
+
+    .intro-img {
+      position: absolute;
+      top: 26%;
+      left: 61%;
+      right: 11%;
+      img {
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .header-text {
+    margin-top: 20rem;
+    padding: 0rem 14rem;
+    hr {
+      width: 12%;
+      color: $neutral_very_light_gray;
+    }
+
+    h1 {
+      margin-top: 2rem;
+      color: $primary_dark_violet;
+      font-size: $header1;
+    }
+  }
+
+  .insure-benefits {
+    margin-top: 8rem;
+    padding: 0rem 14rem;
+
+    @include flex(space-around, center, row);
+
+    .snappy-process {
+      .snappy-text {
+        h3 {
+          margin-top: 2rem;
+          color: $primary_dark_violet;
+        }
+        p {
+          margin-top: 1rem;
+          color: $neutral_dark_grayish_violet;
+          font-family: $font_karla;
+        }
+      }
+    }
+
+    .affordable-process {
+      margin-left: 3rem;
+      .affordable-text {
+        h3 {
+          margin-top: 2rem;
+          color: $primary_dark_violet;
+        }
+        p {
+          margin-top: 1rem;
+          color: $neutral_dark_grayish_violet;
+          font-family: $font_karla;
+        }
+      }
+    }
+
+    .people-first {
+      margin-left: 3rem;
+      .people-text {
+        h3 {
+          margin-top: 2rem;
+          color: $primary_dark_violet;
+        }
+        p {
+          margin-top: 1rem;
+          color: $neutral_dark_grayish_violet;
+          font-family: $font_karla;
+        }
+      }
+    }
+  }
+
+  .findout-container {
+    margin-top: 10rem;
+    padding: 0rem 10rem;
+    position: relative;
+    margin-left: 14rem;
+    margin-right: 14rem;
+    background: url("../images/bg-pattern-how-we-work-desktop.svg") no-repeat
+      right $primary_dark_violet;
+    min-height: 20vh;
+
+    .findout-content {
+      padding: 5rem 0rem;
+      @include flex(space-between, center, row);
+
+      .findout-text {
+        h1 {
+          font-size: $header1;
+          color: $neutral_white;
+          line-height: 5rem;
+        }
+      }
+
+      .findout-btn {
+        .how-we-wrok-btn {
+          border: 1px solid $neutral_white;
+          font-family: $font_karla;
+          text-transform: uppercase;
+          background: none;
+          padding: 1rem 3rem;
+          cursor: pointer;
+          color: $neutral_white;
+
+          &:hover {
+            background: $neutral_white;
+            color: $primary_dark_violet;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-container {
+  padding: 0rem 12rem;
+  margin-top: 10rem;
+  min-height: 70vh;
+  background: url("../images/bg-pattern-footer-desktop.svg") no-repeat top left
+    $neutral_very_light_gray;
+
+  .footer-social {
+    padding: 5rem;
+    @include flex(space-between, center, row);
+
+    .footer-logo {
+      flex: 1;
+    }
+
+    .social-icons {
+      @include flex(center, center, row);
+
+      a {
+        padding: 1rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        .fab {
+          color: $neutral_dark_grayish_violet;
+        }
+
+        &:hover {
+          .fab {
+            color: $primary_dark_violet;
+            transition: all 0.2s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+  hr {
+    width: 100%;
+    color: $neutral_very_light_gray;
+  }
+
+  .footer-links {
+    margin-top: 5rem;
+    padding: 0rem 5rem;
+    @include flex(space-between, center, row);
+
+    .company {
+      .company-heading {
+        align-self: flex-start;
+
+        h5 {
+          text-transform: uppercase;
+          color: $neutral_dark_grayish_violet;
+          font-family: $font_karla;
+        }
+      }
+
+      .company-links {
+        margin-top: 2rem;
+        @include flex(center, center, column);
+
+        a {
+          align-self: flex-start;
+          margin-top: 1rem;
+          text-decoration: none;
+          color: $neutral_vary_dark_violet;
+          font-family: $font_karla;
+          font-size: small;
+          font-weight: bold;
+          letter-spacing: 0.1rem;
+          text-transform: uppercase;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .help {
+      .help-heading {
+        align-self: flex-start;
+
+        h5 {
+          text-transform: uppercase;
+          color: $neutral_dark_grayish_violet;
+          font-family: $font_karla;
+        }
+      }
+
+      .help-links {
+        margin-top: 2rem;
+        @include flex(center, center, column);
+
+        a {
+          align-self: flex-start;
+          margin-top: 1rem;
+          text-decoration: none;
+          color: $neutral_vary_dark_violet;
+          font-family: $font_karla;
+          font-size: small;
+          font-weight: bold;
+          letter-spacing: 0.1rem;
+          text-transform: uppercase;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .contact {
+      align-self: baseline;
+
+      .contact-heading {
+        align-self: flex-start;
+
+        h5 {
+          text-transform: uppercase;
+          color: $neutral_dark_grayish_violet;
+          font-family: $font_karla;
+        }
+      }
+
+      .contact-links {
+        margin-top: 2rem;
+        @include flex(center, center, column);
+
+        a {
+          align-self: flex-start;
+          margin-top: 1rem;
+          text-decoration: none;
+          color: $neutral_vary_dark_violet;
+          font-family: $font_karla;
+          font-size: small;
+          font-weight: bold;
+          letter-spacing: 0.1rem;
+          text-transform: uppercase;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .others {
+      align-self: baseline;
+      .others-heading {
+        align-self: flex-start;
+
+        h5 {
+          text-transform: uppercase;
+          color: $neutral_dark_grayish_violet;
+          font-family: $font_karla;
+        }
+      }
+
+      .others-links {
+        margin-top: 2rem;
+        @include flex(center, center, column);
+
+        a {
+          align-self: flex-start;
+          margin-top: 1rem;
+          text-decoration: none;
+          color: $neutral_vary_dark_violet;
+          font-family: $font_karla;
+          font-size: small;
+          font-weight: bold;
+          letter-spacing: 0.1rem;
+          text-transform: uppercase;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

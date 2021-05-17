@@ -1,0 +1,805 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  font-family: "DM Serif Display", serif;
+}
+
+.header-container .nav-bar-container nav {
+  width: 90%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header-container .nav-bar-container nav .logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0rem 14rem;
+}
+
+.header-container .nav-bar-container nav .nav-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+.header-container .nav-bar-container nav .nav-links a {
+  margin: 1rem;
+  text-decoration: none;
+  font-family: "Karla", sans-serif;
+  color: #837d87;
+  text-transform: uppercase;
+}
+
+.header-container .nav-bar-container nav .nav-links a:hover {
+  color: #2d2640;
+}
+
+.header-container .nav-bar-container nav .nav-links .plan-btn .plan-button {
+  margin-left: 1rem;
+  border: 1px solid #2b272f;
+  font-family: "Karla", sans-serif;
+  text-transform: uppercase;
+  background: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.header-container .nav-bar-container nav .nav-links .plan-btn .plan-button:hover {
+  background: #2b272f;
+  color: white;
+}
+
+.main-container .intro-container {
+  padding: 5rem 1rem;
+  background-color: #2d2640;
+  position: relative;
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main-container .intro-container .bg-left {
+  position: absolute;
+  top: 60%;
+  left: 0;
+}
+
+.main-container .intro-container .bg-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.main-container .intro-container .bg-right img {
+  width: 100%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-container .intro-container .intro-text {
+  padding: 0rem 14rem;
+}
+
+.main-container .intro-container .intro-text hr {
+  width: 20%;
+  color: white;
+}
+
+.main-container .intro-container .intro-text h1 {
+  margin-top: 2rem;
+  font-size: 5rem;
+  color: white;
+  line-height: 5rem;
+}
+
+.main-container .intro-container .intro-text p {
+  color: white;
+  font-family: "Karla", sans-serif;
+  margin-top: 2rem;
+}
+
+.main-container .intro-container .intro-text .intro-btn {
+  margin-top: 2rem;
+}
+
+.main-container .intro-container .intro-text .intro-btn .intro-button {
+  border: 1px solid white;
+  font-family: "Karla", sans-serif;
+  text-transform: uppercase;
+  background: none;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  color: white;
+}
+
+.main-container .intro-container .intro-text .intro-btn .intro-button:hover {
+  background: white;
+  color: #2d2640;
+}
+
+.main-container .intro-container .intro-img {
+  position: absolute;
+  top: 26%;
+  left: 61%;
+  right: 11%;
+}
+
+.main-container .intro-container .intro-img img {
+  width: 100%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-container .header-text {
+  margin-top: 20rem;
+  padding: 0rem 14rem;
+}
+
+.main-container .header-text hr {
+  width: 12%;
+  color: #fafafa;
+}
+
+.main-container .header-text h1 {
+  margin-top: 2rem;
+  color: #2d2640;
+  font-size: 5rem;
+}
+
+.main-container .insure-benefits {
+  margin-top: 8rem;
+  padding: 0rem 14rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main-container .insure-benefits .snappy-process .snappy-text h3 {
+  margin-top: 2rem;
+  color: #2d2640;
+}
+
+.main-container .insure-benefits .snappy-process .snappy-text p {
+  margin-top: 1rem;
+  color: #837d87;
+  font-family: "Karla", sans-serif;
+}
+
+.main-container .insure-benefits .affordable-process {
+  margin-left: 3rem;
+}
+
+.main-container .insure-benefits .affordable-process .affordable-text h3 {
+  margin-top: 2rem;
+  color: #2d2640;
+}
+
+.main-container .insure-benefits .affordable-process .affordable-text p {
+  margin-top: 1rem;
+  color: #837d87;
+  font-family: "Karla", sans-serif;
+}
+
+.main-container .insure-benefits .people-first {
+  margin-left: 3rem;
+}
+
+.main-container .insure-benefits .people-first .people-text h3 {
+  margin-top: 2rem;
+  color: #2d2640;
+}
+
+.main-container .insure-benefits .people-first .people-text p {
+  margin-top: 1rem;
+  color: #837d87;
+  font-family: "Karla", sans-serif;
+}
+
+.main-container .findout-container {
+  margin-top: 10rem;
+  padding: 0rem 10rem;
+  position: relative;
+  margin-left: 14rem;
+  margin-right: 14rem;
+  background: url("../images/bg-pattern-how-we-work-desktop.svg") no-repeat right #2d2640;
+  min-height: 20vh;
+}
+
+.main-container .findout-container .findout-content {
+  padding: 5rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main-container .findout-container .findout-content .findout-text h1 {
+  font-size: 5rem;
+  color: white;
+  line-height: 5rem;
+}
+
+.main-container .findout-container .findout-content .findout-btn .how-we-wrok-btn {
+  border: 1px solid white;
+  font-family: "Karla", sans-serif;
+  text-transform: uppercase;
+  background: none;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  color: white;
+}
+
+.main-container .findout-container .findout-content .findout-btn .how-we-wrok-btn:hover {
+  background: white;
+  color: #2d2640;
+}
+
+.footer-container {
+  padding: 0rem 12rem;
+  margin-top: 10rem;
+  min-height: 70vh;
+  background: url("../images/bg-pattern-footer-desktop.svg") no-repeat top left #fafafa;
+}
+
+.footer-container .footer-social {
+  padding: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer-container .footer-social .footer-logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.footer-container .footer-social .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer-container .footer-social .social-icons a {
+  padding: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-container .footer-social .social-icons a .fab {
+  color: #837d87;
+}
+
+.footer-container .footer-social .social-icons a:hover .fab {
+  color: #2d2640;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-container hr {
+  width: 100%;
+  color: #fafafa;
+}
+
+.footer-container .footer-links {
+  margin-top: 5rem;
+  padding: 0rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer-container .footer-links .company .company-heading {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.footer-container .footer-links .company .company-heading h5 {
+  text-transform: uppercase;
+  color: #837d87;
+  font-family: "Karla", sans-serif;
+}
+
+.footer-container .footer-links .company .company-links {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-container .footer-links .company .company-links a {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #2b272f;
+  font-family: "Karla", sans-serif;
+  font-size: small;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.footer-container .footer-links .company .company-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-container .footer-links .help .help-heading {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.footer-container .footer-links .help .help-heading h5 {
+  text-transform: uppercase;
+  color: #837d87;
+  font-family: "Karla", sans-serif;
+}
+
+.footer-container .footer-links .help .help-links {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-container .footer-links .help .help-links a {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #2b272f;
+  font-family: "Karla", sans-serif;
+  font-size: small;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.footer-container .footer-links .help .help-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-container .footer-links .contact {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+.footer-container .footer-links .contact .contact-heading {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.footer-container .footer-links .contact .contact-heading h5 {
+  text-transform: uppercase;
+  color: #837d87;
+  font-family: "Karla", sans-serif;
+}
+
+.footer-container .footer-links .contact .contact-links {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-container .footer-links .contact .contact-links a {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #2b272f;
+  font-family: "Karla", sans-serif;
+  font-size: small;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.footer-container .footer-links .contact .contact-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-container .footer-links .others {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+.footer-container .footer-links .others .others-heading {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.footer-container .footer-links .others .others-heading h5 {
+  text-transform: uppercase;
+  color: #837d87;
+  font-family: "Karla", sans-serif;
+}
+
+.footer-container .footer-links .others .others-links {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-container .footer-links .others .others-links a {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #2b272f;
+  font-family: "Karla", sans-serif;
+  font-size: small;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.footer-container .footer-links .others .others-links a:hover {
+  text-decoration: underline;
+}
+
+.attribution {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: #2b272f;
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .main-container .intro-container .intro-img {
+    height: 50vh;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .header-container .nav-bar-container nav {
+    width: 100%;
+  }
+  .header-container .nav-bar-container nav .logo {
+    padding: 0rem;
+  }
+  .header-container .nav-bar-container nav .nav-mobile {
+    content: url("../images/icon-hamburger.svg");
+    text-align: right;
+    cursor: pointer;
+  }
+  .header-container .nav-bar-container nav .nav-close {
+    content: url("../images/icon-close.svg");
+  }
+  .header-container .nav-bar-container nav .nav-links {
+    display: none;
+  }
+  .header-container .nav-bar-container nav .nav-links {
+    top: 60%;
+    left: 50%;
+    position: fixed;
+    height: 100%;
+    width: 0%;
+    background: url("../images/bg-pattern-mobile-nav.svg") no-repeat bottom #2b272f;
+    background-size: contain;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .header-container .nav-bar-container nav .nav-links ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header-container .nav-bar-container nav .nav-links ul li {
+    margin-top: 3rem;
+  }
+  .header-container .nav-bar-container nav .nav-links a {
+    margin-top: 3rem;
+    color: white;
+  }
+  .header-container .nav-bar-container nav .nav-links a:hover {
+    color: #837d87;
+  }
+  .header-container .nav-bar-container nav .nav-links .plan-btn {
+    margin-top: 3rem;
+  }
+  .header-container .nav-bar-container nav .nav-links .plan-btn .plan-button {
+    margin: 0rem;
+    width: 300px;
+    border: 1px solid white;
+    color: white;
+  }
+  .main-container {
+    padding: 0rem;
+  }
+  .main-container .intro-container .bg-left {
+    content: url("../images/bg-pattern-intro-left-mobile.svg");
+    width: 30vw;
+    height: 50vh;
+    top: 50%;
+    left: 0;
+  }
+  .main-container .intro-container .bg-right {
+    content: url("../images/bg-pattern-intro-right-mobile.svg");
+    width: 30vw;
+    height: 50vh;
+    top: 90%;
+  }
+  .main-container .intro-container .intro-text {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-top: 50rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    padding: 0rem;
+  }
+  .main-container .intro-container .intro-text hr {
+    display: none;
+  }
+  .main-container .intro-container .intro-text br {
+    display: none;
+  }
+  .main-container .intro-container .intro-text h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  .main-container .intro-container .intro-img {
+    top: 0;
+    left: 0;
+    right: 0;
+    content: url("../images/image-intro-mobile.jpg");
+    width: 100%;
+  }
+  .main-container .header-text {
+    text-align: center;
+  }
+  .main-container .header-text br {
+    display: none;
+  }
+  .main-container .header-text hr {
+    width: 30%;
+    margin-left: 35%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .main-container .header-text h1 {
+    font-size: 3.5rem;
+  }
+  .main-container .insure-benefits {
+    text-align: center;
+    display: block;
+  }
+  .main-container .insure-benefits br {
+    display: none;
+  }
+  .main-container .insure-benefits .affordable-process {
+    margin: 0rem;
+    margin-top: 3rem;
+  }
+  .main-container .insure-benefits .people-first {
+    margin: 0rem;
+    margin-top: 3rem;
+  }
+  .main-container .findout-container {
+    padding: 0rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    text-align: center;
+    background: url("../images/bg-pattern-how-we-work-mobile.svg") no-repeat top right #2d2640;
+  }
+  .main-container .findout-container .findout-content {
+    display: block;
+  }
+  .main-container .findout-container .findout-content .findout-text br {
+    display: none;
+  }
+  .main-container .findout-container .findout-content .findout-text h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .main-container .findout-container .findout-content .findout-btn {
+    margin-top: 2rem;
+  }
+  .footer-container {
+    padding: 5rem;
+    background: url("../images/bg-pattern-footer-mobile.svg") no-repeat top left center/cover #fafafa;
+  }
+  .footer-container .footer-social {
+    display: block;
+  }
+  .footer-container .footer-social .footer-logo {
+    text-align: center;
+  }
+  .footer-container .footer-social .social-icons {
+    margin-top: 3rem;
+  }
+  .footer-container .footer-links {
+    display: block;
+    text-align: center;
+  }
+  .footer-container .footer-links .company .company-links a {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .footer-container .footer-links .help {
+    margin-top: 3rem;
+  }
+  .footer-container .footer-links .help .help-links a {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .footer-container .footer-links .contact {
+    margin-top: 3rem;
+  }
+  .footer-container .footer-links .contact .contact-links a {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .footer-container .footer-links .others {
+    margin-top: 3rem;
+  }
+  .footer-container .footer-links .others .others-links a {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
