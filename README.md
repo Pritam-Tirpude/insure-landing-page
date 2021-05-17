@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Huddle Alternate Block Feature Solution](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100/hub/html5-css3-flex-sass-gsap-wb2FMUKKv)
-- Live Site URL: [Live Site](https://huddle-alternate-blocks.netlify.app/)
+- Solution URL: [Insure Landing Page Solution](https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8/hub/htmlcsssassflexjavscript-lG_WIQRXr)
+- Live Site URL: [Live Site](https://insure-landing-site.netlify.app/)
 
 ## My process
 
