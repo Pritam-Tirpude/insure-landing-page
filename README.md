@@ -6,7 +6,7 @@
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [ Solution Screenshot](#solution-screenshot)
+  - [ Solution Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
